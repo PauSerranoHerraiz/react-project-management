@@ -1,6 +1,7 @@
 
 body {
   margin: 0;
+  text-align: center;
 }
 
 a {
@@ -53,7 +54,7 @@ textarea {
   margin: 0 auto;
   margin-bottom: 20px;
   background: #94a7c8;
-  border-radius: 4px;
+  border-radius: 12px;
 }
 
 .ProjectCard h3::after {
