@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 
 import Loader from "../components/Loader";
 import { BASE_URL } from "../config/api";
+import { Link } from "react-router-dom";
 
 
 function ProjectListPage() {
@@ -32,6 +33,10 @@ function ProjectListPage() {
                     <div className="card" key={projectObj.id}>
                         <h3>{projectObj.title}</h3>
                         <p>{projectObj.description}</p>
+                        
+                        <Link to={`/projects/${projectObj.id}`}>
+                        <button>More details</button>
+                        </Link>
                     </div>
                 )
             })}
