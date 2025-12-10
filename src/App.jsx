@@ -17,8 +17,8 @@ function App() {
         <Route path="/" element={<HomePage />} />
         <Route path="/projects" element={<ProjectListPage />} />
         <Route path="/projects/create" element={<CreateProjectPage />} />
-        <Route path="/projects/edit/:projectId" element={<EditProjectPage />} />
         <Route path="/projects/:projectId" element={<ProjectDetailsPage />} />
+        <Route path="/projects/edit/:projectId" element={<EditProjectPage />} />
 
         <Route path="*" element={<h1>Page not found</h1>} />
       </Routes>
