@@ -1,11 +1,21 @@
+import { Route, Routes } from "react-router-dom";
+import HomePage from "./pages/HomePage";
+import ProjectListPage from "./pages/ProjectListPage";
+import Navbar from "./components/Navbar";
+
 
 function App() {
 
   return (
     <>
+      <Navbar />
       
-      <h1>React Project Management</h1>
-     
+      <Routes>
+        <Route path="/" element={<HomePage />} />
+        <Route path="/projects" element={<ProjectListPage />} />
+        <Route path="*" element={<h1>Page not found</h1>} />
+      </Routes>
+
     </>
   )
 }
